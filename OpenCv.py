@@ -24,7 +24,7 @@ video_filename = None
 motion_detected = False
 send_video_enabled = False
 motion_detection_enabled = True
-camera_url = 'http://192.168.1.55:8080/video'
+camera_url = 'http://192.168.1.55:4747/video'
 
 
 app.config['BASIC_AUTH_USERNAME'] = 'логин'
@@ -42,7 +42,7 @@ def start_video_recording():
 
     current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     video_filename = f'video_{current_datetime}.mp4'
-    video_writer = cv2.VideoWriter(video_filename, fourcc, 10.0, (1920, 1080))
+    video_writer = cv2.VideoWriter(video_filename, fourcc, 15.0, (640, 480))
     recording = True
 
 def stop_video_recording():
