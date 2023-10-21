@@ -114,11 +114,7 @@ def generate_frames():
         else:
             time.sleep(1) 
             
-
-
-
-
-
+            
 @bot.message_handler(commands=['start'])
 def start(message):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
