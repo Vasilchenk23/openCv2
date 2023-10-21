@@ -147,7 +147,7 @@ def process_new_login(message):
     chat_id = message.chat.id
     new_login = message.text
     app.config['BASIC_AUTH_USERNAME'] = new_login
-    bot.send_message(chat_id, f"Логин успешно изменен на {new_login}")
+    bot.send_message(chat_id, "Логин успешно изменен на {}".format(new_login))
 
 @bot.message_handler(func=lambda message: message.text == "Изменить пароль")
 def change_password(message):
@@ -159,7 +159,7 @@ def process_new_password(message):
     chat_id = message.chat.id
     new_password = message.text
     app.config['BASIC_AUTH_PASSWORD'] = new_password
-    bot.send_message(chat_id, f"Пароль успешно изменен {new_password}")
+    bot.send_message(chat_id, "Пароль успешно изменен {}".format(new_password))
 
 
 @bot.message_handler(func=lambda message: message.text == "Включить отправку видео")
