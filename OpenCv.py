@@ -59,7 +59,7 @@ def stop_video_recording():
 def send_video_to_telegram():
     global video_filename, send_video_enabled
     if send_video_enabled and video_filename is not None:
-        url = f'https://api.telegram.org/bot{TOKEN}/sendVideo'
+        url = 'https://api.telegram.org/bot{}/sendVideo'.format(TOKEN)
         files = {'video': (video_filename, open(video_filename, 'rb'))}
         data = {'chat_id': CHAT_ID}
         response = requests.post(url, data=data, files=files)
