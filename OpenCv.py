@@ -41,7 +41,7 @@ def start_video_recording():
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 
     current_datetime = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    video_filename = f'video_{current_datetime}.mp4'
+    video_filename = 'video_{}.mp4'.format(current_datetime)
     video_writer = cv2.VideoWriter(video_filename, fourcc, 15.0, (640, 480))
     recording = True
 
