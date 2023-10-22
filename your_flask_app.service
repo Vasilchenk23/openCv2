@@ -2,9 +2,9 @@
 Description=Your Flask App
 
 [Service]
-User=maksim
-ExecStart = /home/admin/openCv2/myenv/bin/python /home/admin/openCv2/OpenCv.py
-WorkingDirectory = /home/admin/openCv2
+User=admin
+ExecStart=/home/admin/openCv2/myenv/bin/python /home/admin/openCv2/OpenCv.py
+WorkingDirectory=/home/admin/openCv2
 Restart=always
 
 [Install]
