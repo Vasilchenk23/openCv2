@@ -24,7 +24,7 @@ video_filename = None
 motion_detected = False
 send_video_enabled = False
 motion_detection_enabled = True
-camera_url = 'http://192.168.1.55:4747/video'
+camera_url = 'http://192.168.1.55:8080/video'
 
 
 app.config['BASIC_AUTH_USERNAME'] = 'логин'
