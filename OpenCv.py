@@ -24,7 +24,7 @@ video_filename = None
 motion_detected = False
 send_video_enabled = False
 motion_detection_enabled = True
-camera_url = 'https://0e32-77-120-140-233.ngrok-free.app/video'
+camera_url = 'https://0512-77-120-133-124.ngrok-free.app/video'
 
 
 app.config['BASIC_AUTH_USERNAME'] = 'логин'
