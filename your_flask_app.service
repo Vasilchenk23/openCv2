@@ -3,13 +3,10 @@ Description=Your Flask App
 
 [Service]
 User=admin
-ExecStart=/home/admin/openCv2/myenv/bin/gunicorn --log-level debug -w 3 -b 0.0.0.0:5000 OpenCv:app
+ExecStart=/home/admin/openCv2/myenv/bin/python /home/admin/openCv2/OpenCv.py
 WorkingDirectory=/home/admin/openCv2
 Restart=always
 RestartSec=5
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=your_flask_app
 
 [Install]
 WantedBy=multi-user.target
